@@ -24,6 +24,7 @@ main {
 img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 .name {
     grid-column: 2 / 6;
@@ -79,12 +80,44 @@ i:hover {
     font-weight: 700;
     margin-bottom: 8px;
 }
-a {
+.link {
     text-decoration: none;
+    color:blue;
 }
-a:hover {
+.link:visited { 
+    color:blue;
+}
+.project {
+    text-decoration: none;
+    color: green;
+}
+.project:visited {
+    color: green;
+}
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-blue {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(blue, blue)
+}
+
+.link-underline-green {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(green, green)
+}
+
+.link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%
+}
+/* a:hover {
     color:crimson;
-}
+} */
 .numbers span {
     color: grey;
     font-weight: 600;
